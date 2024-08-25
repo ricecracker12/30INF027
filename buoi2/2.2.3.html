@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's new in recent Windows updates</title>
     <link rel="stylesheet" href="2.2.3.css">
-</head>
-<script>
-    function changeTab(evt, moTabLen) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("tabJS");
+    <script>
+        function changeTab(evt, moTabLen) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("tabJS");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tabDefault");
         for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" tabActive", "");
-    }
-    document.getElementById(moTabLen).style.display = "block";
-    evt.currentTarget.className += " tabActive";
-    }
-</script>
+            tablinks[i].className = tablinks[i].className.replace(" tabActive", "");
+        }
+        document.getElementById(moTabLen).style.display = "block";
+        evt.currentTarget.className += " tabActive";
+        }
+    </script>
+</head>
 <body>
     <h1>What's new in recent Windows updates</h1>
     <div class="which">Windows 11, Windows 10</div>
@@ -29,8 +29,8 @@
     <div class="mbox"><b>Note</b>: Features and app availability may vary by region.</div>
     <br/>
     <div class="tabs">
-        <div class="tabDefault tablink tabActive" onclick="changeTab(event,'Win11')">Windows 11</div>
-        <div class="tabDefault tablink" onclick="changeTab(event,'Win10')">Windows 10</div>
+        <div class="tabDefault tabActive" onclick="changeTab(event,'Win11')">Windows 11</div>
+        <div class="tabDefault" onclick="changeTab(event,'Win10')">Windows 10</div>
     </div>
     <br/><hr>
 

@@ -21,6 +21,10 @@ p, ul {
     font-size: 1.3em;
 }
 
+img {
+    max-width: 100%;
+}
+
 .mbox {
     background: #f3f3f3;
     padding-left: 3.5%;
