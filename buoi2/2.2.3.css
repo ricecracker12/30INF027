@@ -1,0 +1,61 @@
+* {
+    font-family: "Segoe UI Light", "wf_segoe-ui_light", Arial, "Helvetica Neue", Verdana, Helvetica, Sans-Serif;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3.0em;
+}
+
+h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 2.0em;
+}
+
+p, ul {
+    font-size: 1.3em;
+}
+
+.mbox {
+    background: #f3f3f3;
+    padding-left: 3.5%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.button {
+    background-color: #0067b8;
+    color: #fff;
+    transform: scale(0.98);
+    display: inline-block;
+    border: 2px solid transparent;
+    padding: 9px 12px 10px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.which {
+    font-style: italic;
+    color: #767676;
+}
+
+.tabDefault {
+    display: inline-block;
+    color: #737373;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    cursor: pointer;
+    padding-bottom: 4px;
+    margin-right: 46px;
+}
+
+.tabActive {
+    color: #1e1e1e;
+    border-bottom: 2px solid #000;
+}

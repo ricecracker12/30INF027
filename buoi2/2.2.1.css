@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'PoppinsZ';
+    src: url("https://static.znews.vn/fonts/poppinsz/PoppinsZ.woff2") format("woff2"),url("https://static.znews.vn/fonts/poppinsz/PoppinsZ.woff") format("woff"),url("https://static.znews.vn/fonts/poppinsz/PoppinsZ.svg#PoppinsZ") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'PoppinsZ';
+    src: url("https://static.znews.vn/fonts/poppinsz/PoppinsZBold.woff2") format("woff2"),url("https://static.znews.vn/fonts/poppinsz/PoppinsZBold.woff") format("woff"),url("https://static.znews.vn/fonts/poppinsz/PoppinsZBold.svg#PoppinsZBold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap
+}
+
+* {
+    font-family: "PoppinsZ", sans-serif;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h1, h2, .center {
+    text-align: center;
+}
+
+body {
+    font-size: 1.1rem;
+    line-height: 1.66;
+}
+
+h1, figure {
+    max-width: 800px;
+    margin: auto;
+}
+
+figcaption {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: #888;
+}
+
+hr {
+    width: 108px;
+    height: 3px;
+    color: #000000;
+}
+
+.than-bai {
+    max-width: 600px;
+    margin: auto;
+}
+
+.bababa {
+    color: #333;
+}
+
+.firstchar {
+    font-size: 3em;
+    line-height: 48px;
+    display: block;
+    float: left;
+    margin-top: 3px !important;
+    margin-right: 10px;
+    padding: 0 0px 5px 0px;
+    color: inherit;
+    font-weight: bold;
+}

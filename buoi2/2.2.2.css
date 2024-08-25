@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'SFD';
+    src: url("https://kenh14cdn.com/web_font/SFD-Medium.eot") format("eot");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+* {
+    font-family: SFD, arial;
+}
+
+li {
+    caret-color: #fb6c27;
+}
+
+hr.line1 {
+    border: 1px dotted grey;
+}
+
+hr.line2 {
+    border: 1px solid grey;
+}
+
+h1, hr.line1 {
+    margin-left: 0;
+    max-width: 600px;
+}
+
+p, hr.line2, ul, figure {
+    max-width: 500px;
+    margin-left: 100px
+}
+
+figcaption {
+    background: #F2F2F2;
+    padding: 10px;
+}
+
+.credit {
+    text-align: right;
+    font-style: italic;
+    font-family: 'Times New Roman';
+}
