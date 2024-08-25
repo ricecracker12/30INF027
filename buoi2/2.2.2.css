@@ -1,17 +1,12 @@
 @font-face {
-    font-family: 'SFD';
-    src: url("https://kenh14cdn.com/web_font/SFD-Medium.eot") format("eot");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
+    font-family: 'SFD-Medium';
+    font-display: swap;
+    src: url('https://kenh14cdn.com/web_font/SFD-Medium.eot');
+    src: url('https://kenh14cdn.com/web_font/SFD-Medium.eot') format('embedded-opentype'), url('https://kenh14cdn.com/web_font/SFD-Medium.woff2'), url('https://kenh14cdn.com/web_font/SFD-Medium.woff') format('woff'), url('https://kenh14cdn.com/web_font/SFD-Medium.ttf') format('truetype'), url('https://kenh14cdn.com/web_font/SFD-Medium.svg#SFD-Medium') format('svg');
 }
 
 * {
-    font-family: SFD, arial;
-}
-
-li {
-    caret-color: #fb6c27;
+    font-family: 'SFD-Medium', arial;
 }
 
 hr.line1 {
@@ -35,6 +30,10 @@ p, hr.line2, ul, figure {
 figcaption {
     background: #F2F2F2;
     padding: 10px;
+}
+
+img {
+    max-width: 100%;
 }
 
 .credit {

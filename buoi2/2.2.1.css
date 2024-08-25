@@ -42,10 +42,13 @@ figcaption {
     color: #888;
 }
 
+img {
+    max-width: 100%;
+}
+
 hr {
     width: 108px;
-    height: 3px;
-    color: #000000;
+    border: 2px solid black;
 }
 
 .than-bai {
@@ -54,7 +57,7 @@ hr {
 }
 
 .bababa {
-    color: #333;
+    color: #888888;
 }
 
 .firstchar {
