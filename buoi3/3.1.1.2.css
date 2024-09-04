@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'SFD-Medium';
+    font-display: swap;
+    src: url('https://kenh14cdn.com/web_font/SFD-Medium.eot');
+    src: url('https://kenh14cdn.com/web_font/SFD-Medium.eot') format('embedded-opentype'), url('https://kenh14cdn.com/web_font/SFD-Medium.woff2'), url('https://kenh14cdn.com/web_font/SFD-Medium.woff') format('woff'), url('https://kenh14cdn.com/web_font/SFD-Medium.ttf') format('truetype'), url('https://kenh14cdn.com/web_font/SFD-Medium.svg#SFD-Medium') format('svg');
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-family: SFD-Medium;
+    font-size: 34px;
+}
+
+.timePosted {
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-family: SFD-Medium;
+    font-size: 17px;
+}
+
+.author {
+    color: #ED2E2E;
+    font-family: SFD-Medium;
+}
+
+.tomtat {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: SFD-Medium;
+}
+
+.b {
+    font-weight: 700;
+}
+
+.imgcap {
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    color: #41455E;
+}
+
+li {
+    padding: 5px 0px;
+}
+
+p {
+    font-size: 17px;
+    padding: 10px 0px;
+}
