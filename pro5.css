@@ -53,16 +53,33 @@ ul {
     text-align: center;
     padding: auto;
 }
-            
-.navbar li {
+
+.tabDefault {
+    color: white;
     padding: 5px 14px;
     font-size: 15px;
+    cursor: pointer;
+	transition-duration: 0.3s;
 }
 
-.navbar a {
-    color: white;
-}
-
-.navbar :hover {
+.tabDefault:hover {
     background-color: rgb(0, 153, 255);
+    color: black;
+    font-weight: bold;
+	transition-duration: 0.3s;
+}
+
+.tabActive {
+    background-color: rgb(0, 153, 255);
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.button01:hover span {
+    display: none;
+}
+
+.button01:hover:after {
+  content: " 👀"
 }

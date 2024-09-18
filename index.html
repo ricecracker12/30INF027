@@ -1,52 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập Thiết kế Web</title>
+    <title>Trang web cá nhân</title>
+    <link rel="stylesheet" href="pro5.css">
 </head>
-<style>
-
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-</style>
+<script>
+    function changeTab(evt, moTabLen) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tabJS");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tabDefault");
+    for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" tabActive", "");
+    }
+    document.getElementById(moTabLen).style.display = "block";
+    evt.currentTarget.className += " tabActive";
+    }
+</script>
 <body>
-    <h2>Hoàng Lân - 223001749</h2>
-    <p>Xem suộc cốt <a href="https://github.com/ricecracker12/30INF027">tại đây</a></p>
-    <h3>Buổi 1</h3>
-    <ul>
-        <li><a href="buoi1/baitrenlop-buoi1.html">Bài trên lớp</a></li>
-        <li><a href="buoi1/1.1.html">1.1</a></li>
-        <li><a href="buoi1/1.2.1.html">2.1</a></li>
-        <li><a href="buoi1/1.2.2.html">2.2</a></li>
-        <li><a href="buoi1/1.2.3.html">2.3</a></li>
-    </ul>
-    <h3>Buổi 2</h3>
-    <ul>
-        <li><a href="buoi2/baitrenlop-1.html">Bài trên lớp</a></li>
-        <li>1:<ul>
-            <li><a href="buoi2/2.1.1.1.html">Inline</a></li>
-            <li><a href="buoi2/2.1.1.2.html">Internal</a></li>
-            <li><a href="buoi2/2.1.1.3.html">External</a> (<a href="buoi2/2.1.1.css">css</a>)</li>
-        </ul></li>
-        <li><a href="buoi2/2.2.1.html">2.1</a> (<a href="buoi2/2.2.1.css">css</a>)</li>
-        <li><a href="buoi2/2.2.2.html">2.2</a> (<a href="buoi2/2.2.2.css">css</a>)</li>
-        <li><a href="buoi2/2.2.3.html">2.3</a> (<a href="buoi2/2.2.3.css">css</a>)</li>
-    </ul>
-    <h3>Buổi 3</h3>
-    <ul>
-        <li><a href="buoi3/baitrenlop-1.html">Bài trên lớp</a></li>
-        <li><a href="buoi3/3.2.html">2</a></li>
-        <li><a href="buoi3/3.3.html">3</a></li>
-        <li><a href="pro5.html">4</a></li>
-    </ul>
-    <h3>Buổi 4</h3>
-    <ul>
-        <li><a href="buoi4/4.1.html">1</a></li>
-        <li><a href="pro5.html">2</a></li>
-    </ul>
+    <header>
+        <h1>Thông tin cá nhân</h1>
+        <img src="https://cdn.discordapp.com/avatars/461501983757565964/a349b256afce91131a79b79d6c2232c3.png" class="profile-pic">
+    </header>
 
+    <div>
+        <ul class="navbar">
+            <li><div class="tabDefault tabActive" onclick="changeTab(event,'General')">Chung</div></li>
+            <li><div class="tabDefault" onclick="changeTab(event,'BT')"><span class="button01">Bài tập</span></div></li>
+        </ul>
+    </div>
+
+    <div id="General" class="tabJS">
+    <section>
+        <h2>Giới thiệu</h2>
+        <p>Họ và tên: Hoàng Lân</p>
+        <p>Ngày sinh: 12/03/2005</p>
+        <p>Theo học: Ngành Công nghệ thông tin</p>
+    </section>
+
+    <section>
+        <h2>Sở thích</h2>
+        <ul>
+            <li>Nghe nhạc</li>
+            <li>Chơi game</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Học tập</h2>
+        <ul>
+            <li>Hiện học tập tại: Trường Đại học Thủ đô Hà Nội (từ 2023)</li>
+        </ul>
+    </section>
+    </div>
+
+    <div id="BT" class="tabJS" style="display:none">
+        <section>
+        <p>Xem suộc cốt <a href="https://github.com/ricecracker12/30INF027">tại đây</a></p>
+        <h3>Buổi 1</h3>
+        <ul>
+            <li><a href="buoi1/baitrenlop-buoi1.html">Bài trên lớp</a></li>
+            <li><a href="buoi1/1.1.html">1.1</a></li>
+            <li><a href="buoi1/1.2.1.html">2.1</a></li>
+            <li><a href="buoi1/1.2.2.html">2.2</a></li>
+            <li><a href="buoi1/1.2.3.html">2.3</a></li>
+        </ul>
+        <h3>Buổi 2</h3>
+        <ul>
+            <li><a href="buoi2/baitrenlop-1.html">Bài trên lớp</a></li>
+            <li>1:<ul>
+                <li><a href="buoi2/2.1.1.1.html">Inline</a></li>
+                <li><a href="buoi2/2.1.1.2.html">Internal</a></li>
+                <li><a href="buoi2/2.1.1.3.html">External</a> (<a href="buoi2/2.1.1.css">css</a>)</li>
+            </ul></li>
+            <li><a href="buoi2/2.2.1.html">2.1</a> (<a href="buoi2/2.2.1.css">css</a>)</li>
+            <li><a href="buoi2/2.2.2.html">2.2</a> (<a href="buoi2/2.2.2.css">css</a>)</li>
+            <li><a href="buoi2/2.2.3.html">2.3</a> (<a href="buoi2/2.2.3.css">css</a>)</li>
+        </ul>
+        <h3>Buổi 3</h3>
+        <ul>
+            <li><a href="buoi3/baitrenlop-1.html">Bài trên lớp</a></li>
+            <li><a href="buoi3/3.2.html">2</a></li>
+            <li><a href="buoi3/3.3.html">3</a></li>
+            <li><a href="#">4</a></li>
+        </ul>
+        <h3>Buổi 4</h3>
+        <ul>
+            <li><a href="buoi4/4.1.html">1</a></li>
+            <li><a href="#">2</a></li>
+        </ul>
+        <h3>Buổi 5</h3>
+        <ul>
+            <li><a href="buoi5/baitrenlop.html">Bài trên lớp</a></li>
+            <li><a href="buoi5/5.1.html">1</a></li>
+            <li><a href="buoi5/5.2.html">2</a></li>
+        </ul>
+        </section>
+    </div>
 </body>
 </html>
