@@ -1,0 +1,88 @@
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main_chinh {
+    background: #170f23;    
+    display: flex;
+    flex-direction: column;
+    width: 1250px;
+    height: 350px;
+    border-radius: 6px;
+}
+
+h2{
+    align-self: start;
+    margin-left: 45px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.bolon1, .bolon2, .bolon3, .bolon4, .bolon5, .bo1, .lop1, .lop2, .lop3, p {
+    width: 200px;
+    height: 200px;
+}
+
+.bolon1, .bolon2, .bolon3, .bolon4, .bolon5 {
+    position: relative;
+}
+
+.bo1 {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.bo1 .lop1 {
+    position: absolute;
+    transition: 0.8s;
+}
+
+.bo1:hover .lop1 {
+    transform: scale(1.1);
+}
+
+.bo1 .lop2 {
+    position: absolute;
+    opacity: 0;
+    background-color: black;
+    transition: 0.8s;
+}
+
+.bo1:hover .lop2 {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+.bo1 .lop3 {
+    position: absolute;
+    top: 87.5px;
+    left: 62.5px;
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.bo1:hover .lop3 {
+    opacity: 1;
+}
+
+.p {
+    margin-top: 210px;
+    font-size: 11pt;
+    color: white;
+}
