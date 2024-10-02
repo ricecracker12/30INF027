@@ -8,6 +8,10 @@
 </head>
 <script src="https://kit.fontawesome.com/927595617c.js" crossorigin="anonymous"></script>
 <script>
+	function switchStyle(style) {
+		document.documentElement.className = style;
+	}
+
     function changeTab(evt, moTabLen) {
         var i, x, tablinks;
         x = document.getElementsByClassName("tabJS");
@@ -24,27 +28,27 @@
 </script>
 <body>
     <header>
-        <h1><i class="fa-regular fa-user"></i>Thông tin cá nhân</h1>
+        <h1><i class="fa-regular fa-user"></i> Thông tin cá nhân</h1>
         <img src="https://cdn.discordapp.com/avatars/461501983757565964/a349b256afce91131a79b79d6c2232c3.png" class="profile-pic">
     </header>
 
     <div>
         <ul class="navbar">
-            <li><div class="tabDefault tabActive" onclick="changeTab(event,'General')"><i class="fa-regular fa-star"></i>Chung</div></li>
-            <li><div class="tabDefault" onclick="changeTab(event,'BT')"><span class="button01"><i class="fa-regular fa-bookmark"></i>Bài tập</span></div></li>
+            <li><div class="tabDefault tabActive" onclick="changeTab(event,'General')"><i class="fa-regular fa-star"></i> Chung</div></li>
+            <li><div class="tabDefault" onclick="changeTab(event,'BT')"><i class="fa-regular fa-bookmark"></i> Bài tập</div></li>
         </ul>
     </div>
 
     <div id="General" class="tabJS">
     <section>
-        <h2><i class="fa-regular fa-circle-user"></i>Giới thiệu</h2>
+        <h2><i class="fa-regular fa-circle-user"></i> Giới thiệu</h2>
         <p>Họ và tên: Hoàng Lân</p>
         <p>Ngày sinh: 12/03/2005</p>
         <p>Theo học: Ngành Công nghệ thông tin</p>
     </section>
 
     <section>
-        <h2><i class="fa-regular fa-hand-point-up"></i>Sở thích</h2>
+        <h2><i class="fa-regular fa-hand-point-up"></i> Sở thích</h2>
         <ul>
             <li>Nghe nhạc</li>
             <li>Chơi game</li>
@@ -52,7 +56,7 @@
     </section>
 
     <section>
-        <h2><i class="fa-regular fa-building"></i>Học tập</h2>
+        <h2><i class="fa-regular fa-building"></i> Học tập</h2>
         <ul>
             <li>Hiện học tập tại: Trường Đại học Thủ đô Hà Nội (từ 2023)</li>
         </ul>
@@ -106,7 +110,14 @@
             <li><a href="buoi6/6.2.html">2</a></li>
             <li><a href="buoi6/6.3.html">3</a></li>
         </ul>
+        <h3>Buổi 7</h3>
+        <ul>
+            <li><a href="buoi6/6.2.html">1</a></li>
+        </ul>
         </section>
     </div>
+	
+	<button onclick="switchStyle('style-dark')" id="myBtn1"><i class="fa-solid fa-moon"></i></button>
+	<button onclick="switchStyle('style-light')" id="myBtn2"><i class="fa-solid fa-sun"></i></button>
 </body>
 </html>

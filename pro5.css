@@ -1,16 +1,40 @@
+:root {
+	--color-bg: #f4f4f4;
+    --color-bg1: #4FB1C2;
+    --color-bg2: white;
+    --color-shadow: rgba(80, 22, 22, 0.1);
+    --color-text: black;
+    --color-navbar: #1e6875;
+    --color-navbar-on: #0099FF;
+    --color-link: #1a73e8;
+    --color-link-hover: #1752aa;
+}
+
+:root.style-dark {
+    --color-bg: #121418;
+    --color-bg1: #282729;
+    --color-bg2: #1B1D24;
+    --color-shadow: rgba(255, 255, 255, 0.3);
+    --color-text: white;
+    --color-navbar: #1e6875;
+    --color-navbar-on: #0099FF;
+    --color-link: #8ab4f8;
+    --color-link-hover: #5793f3;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #000000;
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background: #4fb1c2;
+    background: var(--color-bg1);
     color: rgb(255, 255, 255);
 }
 
@@ -27,9 +51,9 @@ section {
     margin-right: auto;
     margin-top: 10px;
     padding: 20px;
-    background: white;
+    background: var(--color-bg2);
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(80, 22, 22, 0.1);
+    box-shadow: 0px 0px 10px var(--color-shadow);
 }
 
 h2 {
@@ -44,9 +68,18 @@ ul {
     padding-left: 20px;
 }
 
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a.hover {
+    color: var(--color-link-hover);
+}
+
 .navbar {
     z-index: 1;
-    background-color: #1e6875;
+    background-color: var(--color-navbar);
     display: flex;
     list-style-type: none;
     margin: auto;
@@ -63,23 +96,49 @@ ul {
 }
 
 .tabDefault:hover {
-    background-color: rgb(0, 153, 255);
-    color: black;
+    background-color: var(--color-navbar-on);
+    color: var(--color-text);
     font-weight: bold;
 	transition-duration: 0.3s;
 }
 
 .tabActive {
-    background-color: rgb(0, 153, 255);
-    color: black;
+    background-color: var(--color-navbar-on);
+    color: var(--color-text);
     font-weight: bold;
     text-decoration: underline;
 }
 
-.button01:hover span {
-    display: none;
+#myBtn1 {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--color-navbar);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }
 
-.button01:hover:after {
-  content: " 👀"
+#myBtn2 {
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--color-navbar);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn1:hover, #myBtn2:hover {
+  background-color: var(--color-navbar-on);
 }
