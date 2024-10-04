@@ -1,5 +1,4 @@
-let soNgauNhien
-soNgauNhien = Math.floor(Math.random() * 10) + 1;
+let soNgauNhien = Math.floor(Math.random() * 10) + 1;
 
 function doanSo() {
     let soNguoiDungNhap = parseInt(document.getElementById("soNhap").value);
@@ -13,5 +12,6 @@ function doanSo() {
         document.getElementById("ketQua").innerHTML = "juan r!";
     } else {
         document.getElementById("ketQua").innerHTML = "sai r.";
+        soNgauNhien = Math.floor(Math.random() * 10) + 1;
     }
 }
