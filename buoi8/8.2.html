@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm số lớn nhất và nhỏ nhất</title>
+</head>
+<script>
+
+function timSoLonNhat(daySo) {
+    return Math.max(...daySo);
+}
+
+function timSoNhoNhat(daySo) {
+    return Math.min(...daySo);
+}
+
+function timSo() {
+    let daySo = document.getElementById("daySo").value.split(',').map(Number);
+            
+    if (daySo.every(isNaN)) {
+        alert("Invalid input");
+        return;
+    }
+
+    document.getElementById("ketQuaLonNhat").innerHTML = "SLN: " + timSoLonNhat(daySo);
+    document.getElementById("ketQuaNhoNhat").innerHTML = "SNN: " + timSoNhoNhat(daySo);
+}
+
+</script>
+<body>
+    <label for="daySo">Nhập dãy số, cách nhau bởi dấu phẩy: </label>
+    <input type="text" id="daySo" placeholder="3,5,1,9,2">
+
+    <button onclick="timSo()">Tìm số lớn nhất và nhỏ nhất</button>
+
+    <p id="ketQuaLonNhat"></p>
+    <p id="ketQuaNhoNhat"></p>
+</body>
+</html>
