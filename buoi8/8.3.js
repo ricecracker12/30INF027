@@ -9,9 +9,9 @@ function doanSo() {
     }
 
     if (soNguoiDungNhap === soNgauNhien) {
-        document.getElementById("ketQua").innerHTML = "juan r!";
+        document.getElementById("ketQua").innerHTML = "juan r! choi lai nao";
+        soNgauNhien = Math.floor(Math.random() * 10) + 1;
     } else {
         document.getElementById("ketQua").innerHTML = "sai r.";
-        soNgauNhien = Math.floor(Math.random() * 10) + 1;
     }
 }
