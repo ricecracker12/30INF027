@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial';
+    background-color: #f0f0f5;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 350px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #8B008B;
+    margin-bottom: 15px;
+}
+
+.tittle {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0px 8px 0px 0px;
+}
+
+.date-group select {
+    cursor: pointer;
+}
+
+select option {
+    cursor: pointer;
+}
+
+.gender-group {
+    margin-top: 10px;
+    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gender-group input,
+.gender-group label {
+    cursor: pointer;
+}
+
+.checkbox-group {
+    display: grid;
+}
+
+.fav {
+    height: 23px;
+    display: flex;
+    align-items: center;
+}
+
+.fav input,
+.fav label {
+    cursor: pointer;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 45%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #00ff0d;
+}
+
+input[type="reset"] {
+    background-color: #3639f4;
+    margin-left: 10px;
+}
+
+.date-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    width: 30%;
+}
+
+.send {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
